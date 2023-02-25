@@ -265,6 +265,7 @@ body {
 @media (max-width:786px) {
 
     body {
+        margin: 20px 0px;
         overflow-x: hidden;
         align-items: stretch;
         min-height: 100vh;
@@ -318,6 +319,7 @@ body {
 
 @media (max-width:280px) {
     .parent {
+        margin: 20px 0px;
         width: 250px;
         height: 625px;
     }
