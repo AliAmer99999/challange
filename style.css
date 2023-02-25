@@ -1,0 +1,335 @@
+
+
+    /* Global Values */
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+
+    font-size: 18px;
+}
+
+    /* Framework  */
+
+.flex-center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Styling  */
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.parent {
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px #0000002e;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+ /* Global Section */
+
+.parent .sec {
+
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+
+ /* The Left Section */
+
+.parent .sec-1 {
+    background-image: linear-gradient(to bottom , hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.parent .sec-1 h3.title {
+
+    color: #ffffffba;
+}
+
+.parent .sec-1 .circle {
+    
+    width: 130px;
+    height: 130px;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom , hsl(256deg 87% 47%) , hsl(241deg 81% 41% / 10%));
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.parent .sec-1 .circle .num {
+
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.parent .sec-1 .circle .sub-num {
+
+    font-size: 0.7em;
+    color: #fff;
+    opacity: .5;
+}
+
+.parent .sec-1 .message {
+
+    height: 25%;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+
+.parent .sec-1 .message .title-des {
+
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+}
+
+.parent .sec-1 .message .des {
+
+    width: 90%;
+    margin-top: 7px;
+    color: #fff;
+    opacity: .5;
+    font-size: .7em;
+    font-weight: 500;
+}
+
+ /* The Right Section */
+
+.parent .sec-2 {
+
+    padding: 20px 40px;
+    justify-content: space-evenly !important;
+}
+
+.parent .sec-2 .title {
+
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.parent .sec-2 .container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 108%;
+}
+
+/* Global Styling To Card */
+
+.parent .sec-2 .container .card {
+
+    display: flex;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    padding: 8px 5px;
+    justify-content: space-between;
+    padding: 10px 11px 10px 5px;
+    font-size: 0.85em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.parent .sec-2 .container .card .con-1 {
+ 
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parent .sec-2 .container .card .con-2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.parent .sec-2 .container .card .con-2 span {
+
+    opacity: .5;
+    margin-left: 5px;
+}
+
+/* Private Styling To Card */
+
+        /*! Reaction Card */
+
+.parent .sec-2 .container .card:first-of-type {
+
+    background-color: hsl(0deg 100% 67% / 15%);
+}
+
+.parent .sec-2 .container .card:first-of-type .title-icon {
+
+    color: hsl(0, 100%, 67%);
+}
+
+        /*! Memory Card */
+
+.parent .sec-2 .container .card:nth-of-type(2) {
+
+    background-color: hsl(39deg 100% 56% / 15%);
+}
+
+.parent .sec-2 .container .card:nth-of-type(2) .title-icon {
+
+    color: hsl(39, 100%, 56%);
+}
+
+        /*! Verbal Card */
+
+.parent .sec-2 .container .card:nth-of-type(3) {
+
+    background-color: hsl(166deg 100% 37% / 15%);
+}
+
+.parent .sec-2 .container .card:nth-of-type(3) .title-icon {
+
+    color: hsl(166, 100%, 37%);
+}
+
+        /*! Visual Card */
+
+.parent .sec-2 .container .card:last-of-type {
+
+    background-color: hsl(234deg 85% 45% / 15%);
+}
+
+.parent .sec-2 .container .card:last-of-type .title-icon {
+
+    color: hsl(234, 85%, 45%);
+}
+
+/* The Button */
+
+.parent .sec-2 a {
+
+    text-decoration: none;
+    background: hsl(224, 30%, 27%);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    font-size: .8em;
+}
+
+.parent .sec-2 a:hover {
+
+    background-image: linear-gradient(to bottom , hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+}
+
+                                                                                                                /*
+!=================================  Media Mobile 786px  =================================                                                                                            */
+
+@media (max-width:786px) {
+
+    body {
+        overflow-x: hidden;
+        align-items: stretch;
+        min-height: 100vh;
+    }
+    .parent {
+        width: 300px;
+        height: 680px;
+        flex-wrap: wrap !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        overflow-y: hidden;
+    }    
+    .parent .sec {
+        width: 100%;
+    }
+    .parent .sec-1 {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 320px;
+    }
+    .parent .sec-1 h3.title {
+        font-size: 1em;
+    }
+    .parent .sec-1 .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .parent .sec-1 .circle .num {
+        font-size: 2.3em;
+    }
+    .parent .sec-1 .circle .sub-num {
+        font-size: .6em;
+    }
+    .parent .sec-1 .message .des {
+        font-size: .6em;
+        margin: 0;
+    }
+    .parent .sec-1 .message .title-des {
+        font-size: 1.11em;
+    }
+    .parent .sec-2 {
+        overflow: hidden;
+        justify-content: normal !important;
+    }
+    .parent .sec-2 .container {
+        width: 237.6px;
+        height: 216px;
+        margin: 10px 0 15px 0;
+    }
+}
+
+@media (max-width:280px) {
+    .parent {
+        width: 250px;
+        height: 625px;
+    }
+    .parent .sec-2 {
+        padding-bottom: 327px;
+    }
+    .parent .sec-2 .container {
+        margin: 0;
+    }
+}
+
+/* 
+!   ##################### MADE BY ALY AMER #####################
+!   ##################### 25/2/2023 #####################
+ */
